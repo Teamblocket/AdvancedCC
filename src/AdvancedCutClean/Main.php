@@ -25,23 +25,27 @@ public function onDisable() {
 }
 
 public function onBreak(BlockBreakEvent $event) {
-
-switch ($event->getBlock()->getId()) {
+$player = $event->getPlayer();
+$block = $event->getBlock();
+switch ($block->getId()) {
 
 case Block::GOLD_ORE:
-  $event->setDrops(array(Item::get(Item::GOLD_INGOT, 0, 1)));
+  //$event->setDrops(array(Item::get(Item::GOLD_INGOT, 0, 1)));
+    $player->getInventory()->addItem(Item::get(Item::GOlD_INGOT, 0, 1);
+    
 
    break;
 
 case Block::IRON_ORE:
 
-  $event->setDrops(array(Item::get(Item::IRON_INGOT, 0, 1)));
+  //$event->setDrops(array(Item::get(Item::IRON_INGOT, 0, 1)));
+  $player->getInventory()->addItem(Item::get(Item::IRON_INGOT, 0, 1);
 
    break;
 
 case Block::COAL_ORE:
 
-  $event->setDrops(array(Item::get(Item::TORCH, 0, 4)));
-
+  //$event->setDrops(array(Item::get(Item::TORCH, 0, 4)));
+  $player->getInventory()->addItem(Item::get(Item::TORCH_INGOT, 0, 1);
   }
 }
