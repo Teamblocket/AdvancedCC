@@ -10,7 +10,7 @@ Features
 
 TODO
 
-[] Make it automatically go to your inventory
+[√] Make it automatically go to your inventory
 
 [] Broadcast message when mined
 
