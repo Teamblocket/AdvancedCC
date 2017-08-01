@@ -1,5 +1,4 @@
 <?php
-
 namespace AdvancedCutClean;
 
 use pocketmine\block\Block;
@@ -10,42 +9,43 @@ use pocketmine\plugin\PluginBase;
 
 class Main extends PluginBase implements Listener {
 
-public function onEnable() {
+public function onEnable()
   $this->getLogger()->info("AdvancedCutClean enabled! Made by inovamc");
-
-  }
-
-public function onDisable() {
-  $this->getLogger()->info("AdvancedCutClean Disabled!");
 
  }
 
-  $this->getServer()->getPluginManager()->registerEvents($this, $this);
+public function onDisable() {
+  $this->getLogger()->info("AdvancedCutClean Disabled!"); 
 
-}
+} 
+
+$this->getServer()->getPluginManager()->registerEvents($this, $this);
+
+ }
 
 public function onBreak(BlockBreakEvent $event) {
+
 $player = $event->getPlayer();
 $block = $event->getBlock();
 switch ($block->getId()) {
 
-case Block::GOLD_ORE:
+case Block::GOLD_ORE: 
   //$event->setDrops(array(Item::get(Item::GOLD_INGOT, 0, 1)));
-    $player->getInventory()->addItem(Item::get(Item::GOlD_INGOT, 0, 1);
-    
+ $player->getInventory()->addItem(Item::get(Item::GOlD_INGOT, 0, 1); 
 
-   break;
+  break;
 
-case Block::IRON_ORE:
-
+case Block::IRON_ORE: 
   //$event->setDrops(array(Item::get(Item::IRON_INGOT, 0, 1)));
-  $player->getInventory()->addItem(Item::get(Item::IRON_INGOT, 0, 1);
+ $player->getInventory()->addItem(Item::get(Item::IRON_INGOT, 0, 1);
 
-   break;
+  break;
 
-case Block::COAL_ORE:
+case Block::COAL_ORE: 
+  //$event->setDrops(array(Item::get(Item::TORCH, 0, 4))); 
+ $player->getInventory()->addItem(Item::get(Item::TORCH, 0, 1); 
 
-  //$event->setDrops(array(Item::get(Item::TORCH, 0, 4)));
-  $player->getInventory()->addItem(Item::get(Item::TORCH_INGOT, 0, 1);
+  break;
+
   }
-}
+ }
