@@ -9,6 +9,7 @@ Features
 [√] Ores into ingots
 
 TODO
+
 [] Make it automatically go to your inventory
 
 [] Broadcast message when mined
