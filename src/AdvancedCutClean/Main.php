@@ -9,7 +9,7 @@ use pocketmine\plugin\PluginBase;
 
 class Main extends PluginBase implements Listener {
 
-public function onEnable()
+public function onEnable() {
   $this->getLogger()->info("AdvancedCutClean enabled! Made by inovamc");
 
  }
