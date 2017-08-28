@@ -4,9 +4,11 @@ AdvancedCutClean Plugin
 
 This is my first ever plugin ever making and I will make sure to better it to better my abilities!
 
+# STABLE || NOT TESTED
 
 Features 
 [√] Ores into ingots
+[√] Latest PMMP API
 
 TODO
 
