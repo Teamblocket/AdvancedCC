@@ -1,7 +1,10 @@
 <?php
+
 namespace AdvancedCutClean;
+
 use pocketmine\block\Block;
 use pocketmine\item\Item;
+
 class Main extends \pocketmine\plugin\PluginBase implements \pocketmine\event\Listener {
   
   public function onEnable() {
