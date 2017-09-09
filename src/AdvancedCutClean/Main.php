@@ -18,8 +18,7 @@ class Main extends \pocketmine\plugin\PluginBase implements \pocketmine\event\Li
   
   public function onBreak(\pocketmine\event\block\BlockBreakEvent $event) {
     $player = $event->getPlayer();
-    $block = $event->getBlock();
-    switch ($block) {
+    switch ($event->getBlock()) {
       
       case Block::GOLD_ORE: 
       $player->getInventory()->addItem(Item::get(Item::GOlD_INGOT, 0, 1)); 
